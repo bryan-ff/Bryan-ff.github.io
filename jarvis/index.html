@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ツ᭄Bʀʏᴀɴ★</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon"
+href="icon.png">
+</head>
+<body>
+<div id="Message">
+<h1 id="H1"></h1>
+</div>
+<a id="log" href="command-log.txt">Commands...</a>
+<div id="Input">
+<input id="msg" onkeypress="Text()" type="text" placeholder="Message...">
+</input>
+<input id="go" onclick="Text()" type="image" src="go.png">
+</input>
+</div>
+<style>
+body{
+ background-image:url("icon.jpeg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+ color: white;
+ font-family: "DragonForcE"
+ }
+								
+@font-face {
+ font-family: "DragonForcE";
+ src: url("text.ttf");
+ }
+								
+#Input{		
+ width: 93%;
+ height: 53px;							
+	border: 3px solid red;
+	border-radius: 50px;
+	border-top: 2px solid red;
+	border-down: 2px solid red;
+	border-left: 3px solid lime;
+	border-right: 3px solid lime;
+	background-color: white;
+	position: fixed;
+  bottom: 0px;
+	}
+								
+#H1 {
+	color: white;
+	padding: 15px;
+	font-size: xx-large;
+	letter-spacing: 3px;
+	}
+								
+#Message {
+	width: 100%;
+	border: 3px solid red;
+	border-radius: 30px 0px 30px 30px;
+	background-color: black;
+	}
+								
+#msg{
+ width: 75%;
+	height: 45px;
+	border: 3px solid black;
+	border-radius: 50px;
+	background-color: black;
+	color: red;
+	font-size: x-large;
+	position: fixed;
+	font-family: "DragonForcE";
+	letter-spacing: 1px;
+	}
+								
+#go{
+	width: 45px;
+	height: 45px;
+	border: 3px solid black;
+	border-radius: 50%;
+	background-color: white;
+	position: relative;
+	left: 87%;
+	}
+								
+#log{
+	color: white;
+	font-size: x-large;
+	text-decoration: none;
+	}
+</style>
+<script>
+function Text() {
+var x = document.getElementById("msg");
+var y = document.getElementById("H1")
+ if (x.value.includes("Online")) 
+ { 
+  y.innerHTML = "System Online";
+  x.value = " ";
+  } 
+  else if (x.value.includes("Wake Up Jarvis"))
+  {
+  y.innerHTML = "Jarvis Active and Running!";
+  x.value = " ";
+  } 
+  else if (x.value.includes("Time"))
+  {
+  y.innerHTML = "The time is : ";
+  x.value = " ";
+  }
+  else if (x.value.includes("Date"))
+  {
+  y.innerHTML = "The date is : ";
+  x.value = " ";
+  }
+  else if (x.value.includes("Hello"))
+  {
+  y.innerHTML = "Hello Sir";
+  x.value = " ";
+  }
+  else if (x.value.includes("Good Morning"))
+  {
+  y.innerHTML = "Good Morning, Sir";
+  x.value = " ";
+  }
+  else if (x.value.includes("Good Afternoon"))
+  {
+  y.innerHTML = "Good Afternoon, Sir";
+  x.value = " ";
+  }
+  else if (x.value.includes("Good Night"))
+  {
+  y.innerHTML = "Good Night, Sir";
+  x.value = " ";
+  }
+  else {
+   y.innerHTML = "Command Not Clear!";
+   x.value = " ";
+    } }
+</script>
+</body>
+</html>
