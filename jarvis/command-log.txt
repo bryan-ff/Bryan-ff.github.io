@@ -1,0 +1,9 @@
+->Online
+->Wake Up Jarvis
+->Time
+->Date
+->Hello
+->Good Morning
+->Good Afternoon
+->Good Night
+⚠️COMMANDS ARE CASE SENSITIVE⚠️
