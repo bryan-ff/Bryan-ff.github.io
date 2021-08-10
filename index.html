@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon"
+href="icon.jpeg">
+<style>
+ @font-face {
+ font-family: "DragonForcE";
+ src: url("text.ttf");
+ }
+ 
+body {
+  background-image: url('me.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: black;
+  font-family: "DragonForcE";
+  font-size: x-large;
+  letter-spacing: 3px;
+}
+
+.sidenav {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-image: url("icon.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;  
+  transition: 0.5s;
+  padding-bottom: 45px;
+  text-align:center;
+  border-radius: 25px 25px 5px 5px;
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  border-left: 3px solid grey;
+}
+
+.sidenav a {
+  padding: 55px 10px 55px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.7s;
+
+}
+
+#lineUp
+{
+	padding-bottom: 1px;	
+	position: sticky;	
+	width: 95%;
+	height: 3px;
+	border: 3px solid white;
+	border-radius: 50px;
+	background-color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.1s;     
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+				<hr id="lineUp" onclick="closeNav()"></hr>
+ 
+  <a href="jarvis/index.html">Jarvis</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1>Bryan</h1>
+<p>Hello</br>
+   I am Bryan,
+   I am a 14 year old Website Developer and Gamer!</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9772; Open</span>
+
+<script>
+var sideNav = document.getElementById("mySidenav");
+function openNav() {
+sideNav.style.height = "90%";
+}
+
+function closeNav() {
+sideNav.style.height = "0";
+}
+</script>
+   
+</body>
+</html> 
