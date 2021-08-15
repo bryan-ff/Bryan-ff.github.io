@@ -7,7 +7,7 @@
 </head>
 <body>
 				<h1>
-								If you are an Indian!<br/>
+								If you are an indian,<br/>
 								👇Click Here
 				</h1>
 				<button id="myBtn" onclick="myFunction()">
@@ -30,6 +30,11 @@
 				<p id="greenTxT">Day</p>
 	     </div>
 				<style>
+@font-face {
+ font-family: "LongShot";
+ src: url("Long_Shot.ttf");
+ } 
+ 
 body
 {
 background-image: url('bg.jpg');
@@ -37,6 +42,9 @@ background-image: url('bg.jpg');
   background-attachment: fixed;
   background-size: 100% 100%;
 	color: white;
+	font-family: "LongShot";
+	text-spacing: 15px;
+font-size: x-large;
 }
 
 #myBtn
@@ -108,6 +116,15 @@ background-image: url('bg.jpg');
  
 }
 
+#author
+{
+				position: fixed;
+				right: 0px;
+				bottom: 0px;
+				font-size: xx-large;
+				text-decoration: none;
+				color: white;
+}
 
 				</style>
 				<script>
@@ -122,5 +139,6 @@ var TXT = document.getElementById("txt");
 				TXT.style.display = "block";
 }
 				</script>
+				<a href="https://bryan-ff.github.io" id="author">-Bryan</p>
 </body>
 </html>
