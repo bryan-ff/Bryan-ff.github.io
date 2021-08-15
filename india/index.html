@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>★Happy Independence Day★</title>
+				<link rel="icon" href="icon.jpg">
+</head>
+<body>
+				<h1>
+								If you are an Indian!<br/>
+								👇Click Here
+				</h1>
+				<button id="myBtn" onclick="myFunction()">
+								🇮🇳
+				</button>
+				<div id="flag">
+								<div id="colors">
+												<div id="orange">
+												</div>
+												<div id="white">
+												</div>
+												<div id="green">
+
+												</div>
+								</div>
+				</div>
+				<div id="txt">
+				<p id="orangeTxT">Happy</p>
+				<p id="whiteTxT">Independence</p>
+				<p id="greenTxT">Day</p>
+	     </div>
+				<style>
+body
+{
+background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+	color: white;
+}
+
+#myBtn
+{
+	background-color: black;
+	color: white;
+	font-size: x-large;
+	width: auto;
+	height: auto;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+
+#colors
+{
+ border: 3px solid white;
+ border-radius: 5px;
+}								
+
+#orange
+{
+				background-color: #FF7500;
+				width: 100%;
+				height: 0px;
+				transition: 0.75s;
+        border-radius: 5px 5px 0px 0px;
+}
+
+#white
+{
+				background-color: #FFFFFF;
+				width: 100%;
+				height: 0px;
+				transition: 0.75s;
+}
+
+#green
+{
+				background-color: #00FF00;
+				width: 100%;
+				height: 0px;
+				transition: 0.75s;
+      border-radius: 0px 0px 5px 5px;
+}
+
+#txt
+{
+				display: none;
+				font-size: xx-large;
+				padding: none;
+}
+
+#orangeTxT
+{
+ color: #FF7500;
+ 
+}
+
+
+#whiteTxT
+{
+ color: #FFFFFF;
+ 
+}
+
+#greenTxT
+{
+ color: #00FF00;
+ 
+}
+
+
+				</style>
+				<script>
+function myFunction() {
+var x = document.getElementById("orange");
+var y = document.getElementById("white");
+var z = document.getElementById("green");
+var TXT = document.getElementById("txt");
+				x.style.height = "65px";
+				y.style.height = "65px";
+				z.style.height = "65px";
+				TXT.style.display = "block";
+}
+				</script>
+</body>
+</html>
